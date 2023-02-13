@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "homepage": "http://Marshudi.com",
+  "name": "Marshudi",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
