@@ -15,7 +15,7 @@ const project_info = [
       figCap:
         "University of Technology and Applied Sciences",
       image:
-        "",
+        "https://marshudi.github.io/wikigulf/logo.png",
       
       constant: "click to visit",
 
@@ -27,23 +27,63 @@ const project_info = [
       figCap:
         "University of Technology and Applied Sciences",
       image:
-        "",
+        "https://raw.githubusercontent.com/marshudi/EventHub/main/pic/poly_eh_r2a-1697158327.jpg",
       
       constant: "click to visit",
 
     },
     {
 
-      pName: "Wiki Gulf 2020",
-      link:"https://marshudi.github.io/wikigulf/",
+      pName: "Personal Blog Website",
+      link:"https://marshudi.github.io/Udacity-Project1-FE-Web/",
       figCap:
-        "University of Technology and Applied Sciences",
+        "UDACITY",
       image:
-        "",
+        "https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/2dmDLmWvCncVHcQ6lz9u5v/9ebc8c914fcf0e8b546bce78133b2a4a/OpenGraph_Udacity_Logo_Update__1_.png",
       
       constant: "click to visit",
 
-    }
+    },
+
+
+    {
+
+      pName: "Landing Page Project",
+      link:"https://marshudi.github.io/Udacity-Project2-FE-Web/",
+      figCap:
+        "UDACITY",
+      image:
+        "https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/2dmDLmWvCncVHcQ6lz9u5v/9ebc8c914fcf0e8b546bce78133b2a4a/OpenGraph_Udacity_Logo_Update__1_.png",
+      
+      constant: "click to visit",
+
+    },
+
+    {
+
+      pName: "Weather Journal App",
+      link:"https://github.com/marshudi/Udacity-Project3-FE-Web",
+      figCap:
+        "UDACITY",
+      image:
+        "https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/2dmDLmWvCncVHcQ6lz9u5v/9ebc8c914fcf0e8b546bce78133b2a4a/OpenGraph_Udacity_Logo_Update__1_.png",
+      
+      constant: "click to visit",
+
+    },
+
+    {
+
+      pName: "Movie Project React 2023",
+      link:"https://github.com/marshudi/Movies-Project-React",
+      figCap:
+        "University of Technology and Applied Sciences",
+      image:
+        "https://user-images.githubusercontent.com/76883519/248277074-df6b93bd-3920-4734-b880-54a28daf615e.jpg",
+      
+      constant: "click to visit",
+
+    },
 
     
   ]
