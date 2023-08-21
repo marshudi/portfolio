@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+
 import  Header from'./components/header'
 
 import  Skills from'./components/Skills'
@@ -11,18 +12,25 @@ import About from './components/about';
 //import Projects from './components/Projects';
 
 
+
 function App() {
   return (
 <>
 
-    <Header/>
+  
+      <Header/>
 
-     <About/>
-     <AboutMe/>
-     <Skills/>
-     <Projects/>
-     <Footer/>
+      <About/>
+      <AboutMe/>
+      <Skills/>
+      <Projects/>
+      <Footer/>
+  
+
+
+
 </>
+
     
   );
 }

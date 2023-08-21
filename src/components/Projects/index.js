@@ -5,6 +5,52 @@ import img2 from "../../img/project2.jpg";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
+
+
+const project_info = [
+  {
+
+      pName: "Wiki Gulf 2020",
+      link:"https://marshudi.github.io/wikigulf/",
+      figCap:
+        "University of Technology and Applied Sciences",
+      image:
+        "",
+      
+      constant: "click to visit",
+
+    },
+    {
+
+      pName: "Event Hub 2022",
+      link:"https://marshudi.github.io/EventHub/",
+      figCap:
+        "University of Technology and Applied Sciences",
+      image:
+        "",
+      
+      constant: "click to visit",
+
+    },
+    {
+
+      pName: "Wiki Gulf 2020",
+      link:"https://marshudi.github.io/wikigulf/",
+      figCap:
+        "University of Technology and Applied Sciences",
+      image:
+        "",
+      
+      constant: "click to visit",
+
+    }
+
+    
+  ]
+
+
+
+
 const Projects = () => {
   return (
     <section className="fun-facts-section" id="Projects">
@@ -25,41 +71,37 @@ const Projects = () => {
           <div className="cards" id="Containerimg">
             
             
-            <div className="divimg">
-              <a
-                className="block block-1"
-                href="https://marshudi.github.io/wikigulf/"
-                target="_blank"
-              >
-                <span>
-                  <img className="imageProjects" src={img} alt="Image" />
-                </span>
+            {project_info.map((p)=>{
+              
+              return(
+              <>
+
+              <div className="divimg">
+                <a
+                  className="block block-1"
+                  href={p.link}
+                  target="_blank"
+                >
+                  <span>
+                    <img className="imageProjects" src={p.image} alt="Image" />
+                  </span>
                 <figcaption>
-                University of Technology and Applied Sciences{" "}
-                  <h3>Wiki Gulf 2020</h3>{" "}
+                  {p.figCap}{" "}
+                  <h3>{p.pName}</h3>{" "}
                   
-                  <p>click to visit</p>{" "}
+                  <p>{p.constant}</p>{" "}
                 </figcaption>
               </a>
             </div>
+              
+              </>
+              )
+            })}
+
+           
 
 
-            <div className="divimg">
-              <a
-                className="block block-2"
-                href="https://marshudi.github.io/EventHub/"
-                target="_blank"
-              >
-                <span>
-                  <img className="imageProjects" src={img2} alt="Image" />
-                </span>
-                <figcaption>
-                University of Technology and Applied Sciences{" "}
-                  <h3>Event Hub 2022</h3>{" "}
-                  <p>click to visit</p>{" "}
-                </figcaption>
-              </a>
-            </div>
+   
 
 
 
