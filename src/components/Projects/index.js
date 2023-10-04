@@ -39,7 +39,7 @@ const project_info = [
       figCap:
         "UDACITY",
       image:
-        "https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/2dmDLmWvCncVHcQ6lz9u5v/9ebc8c914fcf0e8b546bce78133b2a4a/OpenGraph_Udacity_Logo_Update__1_.png",
+        "https://www.usnews.com/object/image/00000179-f5f5-d92c-a979-fff73a330001/201120-udacity-submitted.png?update-time=1623329178450&size=responsiveFlow300",
       
       constant: "click to visit",
 
@@ -53,7 +53,7 @@ const project_info = [
       figCap:
         "UDACITY",
       image:
-        "https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/2dmDLmWvCncVHcQ6lz9u5v/9ebc8c914fcf0e8b546bce78133b2a4a/OpenGraph_Udacity_Logo_Update__1_.png",
+        "https://www.usnews.com/object/image/00000179-f5f5-d92c-a979-fff73a330001/201120-udacity-submitted.png?update-time=1623329178450&size=responsiveFlow300",
       
       constant: "click to visit",
 
@@ -66,7 +66,7 @@ const project_info = [
       figCap:
         "UDACITY",
       image:
-        "https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/2dmDLmWvCncVHcQ6lz9u5v/9ebc8c914fcf0e8b546bce78133b2a4a/OpenGraph_Udacity_Logo_Update__1_.png",
+        "https://www.usnews.com/object/image/00000179-f5f5-d92c-a979-fff73a330001/201120-udacity-submitted.png?update-time=1623329178450&size=responsiveFlow300",
       
       constant: "click to visit",
 
