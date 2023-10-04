@@ -148,7 +148,7 @@ const Projects = () => {
             <div className="divimg">
               <a className="block block-6 " href="#" target="_blank">
                 <span>
-                  <img className="imageProjects" />
+                  <img className="imageProjects" src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm410-10-b_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1939c03b3e09482285303dc8f3c9b0c9" />
                 </span>
                 <figcaption>
                   {" "}
