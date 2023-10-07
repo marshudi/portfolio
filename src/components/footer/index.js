@@ -1,13 +1,16 @@
 import React from "react";
 import "./style.css";
+import 'font-awesome/css/font-awesome.min.css';
+
 
 import {
-  FaXTwitter,
+  FaTwitter,
   FaGithub,
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
 import ScrollAnimation from "react-animate-on-scroll";
+
 
 const Footer = () => {
   return (
@@ -27,7 +30,7 @@ const Footer = () => {
                 target="_blank"
               >
                 {" "}
-                <FaXTwitter size={30} />
+                <FaTwitter size={30} />
               </a>
 
               <a href="https://github.com/marshudi" target="_blank">
@@ -48,6 +51,7 @@ const Footer = () => {
                 {" "}
                 <FaInstagram size={30} />
               </a>
+
             </div>
           </div>
         </div>
