@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 import {
-  FaTwitter,
+  FaXTwitter,
   FaGithub,
   FaLinkedin,
   FaInstagram,
