@@ -27,7 +27,7 @@ const Footer = () => {
                 target="_blank"
               >
                 {" "}
-                <FaTwitter size={30} />
+                <FaXTwitter size={30} />
               </a>
 
               <a href="https://github.com/marshudi" target="_blank">
