@@ -84,6 +84,18 @@ const project_info = [
       constant: "click to visit",
 
     },
+    {
+
+      pName: "Cinemix Movie Streaming Application 2023",
+      link:"https://github.com/marshudi/Cinemix",
+      figCap:
+        "University of Technology and Applied Sciences",
+      image:
+        "https://private-user-images.githubusercontent.com/76883519/293398052-662f9ba6-dca8-4590-be8f-811c41447378.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDM4Njg3NDAsIm5iZiI6MTcwMzg2ODQ0MCwicGF0aCI6Ii83Njg4MzUxOS8yOTMzOTgwNTItNjYyZjliYTYtZGNhOC00NTkwLWJlOGYtODExYzQxNDQ3Mzc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyMzEyMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjI5VDE2NDcyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk4YjlkMjYxMjljMWI0MjU3OGM3YzExZDQwZjM3MWI4ZTk0NTRkN2I0OWIzOTI1N2JkYmM2OThmZjIyN2IwNzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.lUwSE0x5iZptmAZ0oXAcAmprCwQkz4kQukqYeTbtR5I",
+      
+      constant: "click to visit",
+
+    },
 
     
   ]
