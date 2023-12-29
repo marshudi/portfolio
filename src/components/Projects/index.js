@@ -91,7 +91,7 @@ const project_info = [
       figCap:
         "University of Technology and Applied Sciences",
       image:
-        "https://raw.githubusercontent.com/marshudi/Cinemix/main/assets/logo.png",
+        "https://raw.githubusercontent.com/marshudi/Cinemix/main/assets/screens.png",
       
       constant: "click to visit",
 
