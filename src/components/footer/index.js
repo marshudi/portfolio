@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import 'font-awesome/css/font-awesome.min.css';
-
+import  { useState, useEffect } from "react";
 
 import {
   FaTwitter,
@@ -11,8 +11,14 @@ import {
 } from "react-icons/fa";
 import ScrollAnimation from "react-animate-on-scroll";
 
-
 const Footer = () => {
+  const [year, setYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
+
   return (
     <footer className="footer" id="footer">
       <div className="container">
@@ -22,7 +28,7 @@ const Footer = () => {
               animateIn="bounceInRight"
               animateOut="bounceOutLeft"
             >
-              <p> © 2023 - All Rights Reserved. Mohammed Al-Marshudi</p>
+              <p> © {year} - All Rights Reserved. Mohammed Al-Marshudi</p>
             </ScrollAnimation>
             <div className="social-links ">
               <a
