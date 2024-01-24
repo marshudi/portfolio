@@ -12,11 +12,11 @@ import {
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Footer = () => {
-  const [year, setYear] = useState(new Date().getFullYear());
+  // const [year, setYear] = useState(new Date().getFullYear());
 
-  useEffect(() => {
-    setYear(new Date().getFullYear());
-  }, []);
+  // useEffect(() => {
+  //   setYear(new Date().getFullYear());
+  // }, []);
 
 
   return (
@@ -28,7 +28,7 @@ const Footer = () => {
               animateIn="bounceInRight"
               animateOut="bounceOutLeft"
             >
-              <p> © {year} - All Rights Reserved. Mohammed Al-Marshudi</p>
+              <p> © 2024 - All Rights Reserved. Mohammed Al-Marshudi</p>
             </ScrollAnimation>
             <div className="social-links ">
               <a
