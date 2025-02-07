@@ -95,7 +95,7 @@ const Projects = () => {
       <div className="container">
         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
           <div className="row">
-            <div className="section-title">E36MEwLVxvyIYVD4vAwuIqWmhX_uHbaszHsdJR7p7Zk
+            <div className="section-title">
               <h2>
                 My <span>Projects</span>
               </h2>
