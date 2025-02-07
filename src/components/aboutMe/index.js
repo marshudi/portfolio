@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import img from "../../img/icon.png";
+import img from "../../img/newprofilePng.png";
 import "./style.css";
 
 const AboutMe = () => {

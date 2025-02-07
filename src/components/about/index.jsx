@@ -14,7 +14,7 @@ const About = () => {
               animateOut="bounceOutRight"
             >
               <h1>
-              Software Engineer <span> Data Scientist , Game Developer , Video Editor </span>{" "}
+              Software Engineer <span>Data Scientist,<br/>Game Developer,<br/>Video Editor </span>{" "}
               </h1>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">

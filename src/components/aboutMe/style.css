@@ -1,13 +1,68 @@
 .section {
     background-color: var(--dark-700);
     padding-top: 5px;
-
 }
 
 p {
     line-height: 30px;
     padding-bottom: 20px;
     font-size: 22px;
-    text-align: center;
+    text-align: justify; /* Ensures better readability */
     margin: 0 20px;
+    text-justify: inter-word; /* Helps with spacing between words */
+}
+
+/* Center image for all screen sizes */
+.fun-facts-img {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.fun-facts-img img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;
+    display: block;
+}
+
+/* Slower animation for better user experience */
+.animated {
+    animation-duration: 2.5s !important;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .fun-facts-img {
+        justify-content: center;
+        display: flex;
+    }
+
+    .fun-facts-img img {
+        max-width: 80%; /* Adjust image size for better fit */
+        height: auto;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fun-facts-img {
+        justify-content: center;
+        display: flex;
+    }
+
+    .fun-facts-img img {
+        max-width: 75%; /* Makes sure the image fits well on small screens */
+        height: auto;
+    }
+
+    p {
+        font-size: 16px; /* Optimized for small screens */
+        margin: 0 10px;
+    }
 }
