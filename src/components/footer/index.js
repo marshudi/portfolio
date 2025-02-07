@@ -28,7 +28,7 @@ const Footer = () => {
               animateIn="bounceInRight"
               animateOut="bounceOutLeft"
             >
-              <p> © {year} - All Rights Reserved. Mohammed Al-Marshudi</p>
+              <p> © {year} - All Rights Reserved. Mohammed Amour Al-Marshudi</p>
             </ScrollAnimation>
             <div className="social-links ">
               <a
