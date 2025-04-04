@@ -1,0 +1,96 @@
+.why-us-section {
+  background-color: var(--dark-800);
+  padding: 28px 0;
+  text-align: center;
+}
+
+.section-title {
+  padding: 0 15px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: 600px;
+  color: var(--white-900);
+}
+
+.section-title h2 span {
+  position: relative;
+}
+
+.section-title h2 span::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: var(--color-7);
+}
+
+.item-skills h3 {
+  line-height: 1.5;
+  color: var(--white-900);
+  text-transform: uppercase;
+
+  font-weight: bold;
+}
+
+.item-skills p {
+  font-size: 15px;
+  color: var(--white-800);
+}
+
+.item-skills {
+  cursor: pointer;
+  color: white;
+  width: 300px;
+  background-color: var(--dark-700);
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.item-bloq {
+  cursor: none;
+  color: white;
+  width: 300px;
+  background-color: #0007;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.item-skills:hover {
+  transform: rotate(5deg);
+  background-color: black;
+}
+
+.services {
+  width: 90%;
+
+  max-width: 600px;
+  margin: 40px auto;
+  border: 1px solid var(--color-7);
+  border-radius: 20px;
+  padding-top: 20px;
+}
+
+.services h2 {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  color: var(--color-7);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.services p {
+  font-size: 1.4rem;
+}
