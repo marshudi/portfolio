@@ -69,6 +69,7 @@ const AboutMe = () => {
   </ScrollAnimation>
 </div>
 
+
             </div>
           </div>
         </div>
