@@ -22,40 +22,53 @@ const AboutMe = () => {
           </div>
           <div className="fun-facts-items">
             <div className="row justify-content">
-              <div className="">
-                <ScrollAnimation
-                  animateIn="bounceInRight"
-                  animateOut="bounceOutLeft"
-                >
-                  <p>
-                    My name is Mohammed Amour Al-Marshudi, a highly motivated and skilled software developer from Oman. I specialize in JavaScript and Python with a strong foundation in full-stack development and data science. Currently, I am pursuing a Software Engineering degree at the University of Technology and Applied Sciences, where I have been expanding my knowledge in AI, web development, blockchain technology, and data analytics.
-                  </p>
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="bounceInRight"
-                  animateOut="bounceOutLeft"
-                >
-                  <p>
-                    My technical expertise includes React.js, Bootstrap, Tailwind, MongoDB, Firebase, and SQL, with additional experience in Flutter and PHP. I have hands-on experience working on projects that involve data processing, predictive modeling, and automation, utilizing Python libraries such as Pandas, NumPy, and Scikit-learn. I am also proficient in cloud computing and blockchain development, particularly with Hyperledger Fabric.
-                  </p>
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="bounceInRight"
-                  animateOut="bounceOutLeft"
-                >
-                  <p>
-                    I am passionate about problem-solving and integrating innovative solutions into software development. My experience includes developing web applications with CRUD functionality, optimizing database management, and leveraging AI-driven insights for business applications. My dedication to continuous learning and adapting to emerging technologies drives me to contribute meaningfully to the field of software engineering.
-                  </p>
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="bounceInRight"
-                  animateOut="bounceOutLeft"
-                >
-                  <p>
-                    If you are looking for a software developer who bridges the gap between data science and software engineering, I’d love to connect and collaborate on impactful projects. Let's work together to build scalable and innovative solutions!
-                  </p>
-                </ScrollAnimation>
-              </div>
+            <div className="">
+  <ScrollAnimation
+    animateIn="bounceInRight"
+    animateOut="bounceOutLeft"
+  >
+    <p>
+      My name is Mohammed Amour Al-Marshudi, a dedicated IT &amp; Data Automation Engineer from Oman. I have a strong foundation in JavaScript and Python, with hands-on experience in full-stack development and data analytics. While pursuing my Software Engineering degree at the University of Technology and Applied Sciences, I have deepened my knowledge in AI, web development, blockchain technology, and advanced data processing techniques.
+    </p>
+  </ScrollAnimation>
+
+  <ScrollAnimation
+    animateIn="bounceInRight"
+    animateOut="bounceOutLeft"
+  >
+    <p>
+      In my role at Vodafone, I focused on automating data pipelines, streamlining reporting processes, and optimizing system efficiencies. This experience allowed me to refine my skills in project management, data processing, and software deployment. I collaborated with cross-functional teams to design, build, and maintain scalable solutions that significantly reduced manual workloads and improved overall data accuracy.
+    </p>
+  </ScrollAnimation>
+
+  <ScrollAnimation
+    animateIn="bounceInRight"
+    animateOut="bounceOutLeft"
+  >
+    <p>
+      My technical toolkit includes React.js, Bootstrap, Tailwind, MongoDB, Firebase, and SQL. I also have practical experience with Flutter and PHP, enabling me to adapt quickly to diverse project needs. On the data science front, I have contributed to projects involving data processing, predictive modeling, and automation using Python libraries such as Pandas, NumPy, and Scikit-learn. Additionally, I have exposure to Hyperledger Fabric, reflecting my interest in blockchain development.
+    </p>
+  </ScrollAnimation>
+
+  <ScrollAnimation
+    animateIn="bounceInRight"
+    animateOut="bounceOutLeft"
+  >
+    <p>
+      Throughout my career, I have delivered projects requiring CRUD functionality, database optimization, and AI-driven insights for business applications. Leveraging my background in both software engineering and data automation, I excel at architecting solutions that marry technical innovation with strategic value. My commitment to continuous learning and adaptability ensures I remain at the forefront of emerging technologies.
+    </p>
+  </ScrollAnimation>
+
+  <ScrollAnimation
+    animateIn="bounceInRight"
+    animateOut="bounceOutLeft"
+  >
+    <p>
+      If you are looking for a software developer who bridges data science with practical software solutions, I would love to connect and collaborate on impactful projects. Let’s join forces to build scalable, forward-thinking applications that make a real difference.
+    </p>
+  </ScrollAnimation>
+</div>
+
             </div>
           </div>
         </div>
