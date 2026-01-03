@@ -1,0 +1,116 @@
+{
+  "projects": [
+    {
+      "title": "Internal CRM and Operations Platform",
+      "description": "Built a modular FastAPI backend with multiple routers covering authentication, customer profile, segmentation, and operational tools. Implemented JWT authentication, RBAC permissions, middleware logging, and request tracking. Delivered multiple client experiences (React web and Flutter Web App) backed by the same API.",
+      "safeSummary": "A multi-client internal platform for telecom CRM and operations with secure authentication, role-based access, and unified API architecture.",
+      "tags": ["Backend", "Full Stack", "Enterprise"],
+      "techStack": ["FastAPI", "Python", "PostgreSQL", "Docker", "Kubernetes", "React", "TypeScript", "Flutter", "TailwindCSS"],
+      "visibility": "internal",
+      "redactDetails": true,
+      "orgName": "Vodafone Oman",
+      "orgLogo": "/images/vodafone.png"
+    },
+    {
+      "title": "Apache Airflow Production Data Pipelines",
+      "description": "Built and operated multiple production DAGs handling large daily datasets and business critical reporting. Implemented batch processing, safe datatype conversions, duplicate handling, and bulk loading using PostgreSQL COPY patterns. Automated SFTP retrieval, Excel to CSV conversion, ZIP packaging, and email delivery via Office 365 SMTP.",
+      "safeSummary": "Production ETL pipelines handling large-scale daily data processing with automated ingestion, transformation, and delivery.",
+      "tags": ["Data Engineering", "ETL", "Automation"],
+      "techStack": ["Apache Airflow", "Python", "Pandas", "PostgreSQL", "Slack API", "OpenShift"],
+      "visibility": "internal",
+      "redactDetails": true,
+      "orgName": "Vodafone Oman",
+      "orgLogo": "/images/vodafone.png"
+    },
+    {
+      "title": "AI Chatbot Platform",
+      "description": "Integrated local LLM inference with Ollama for privacy conscious deployments. Built session management for multi turn conversations and structured data extraction from natural language. Implemented modular orchestration and validation layers to support future expansion.",
+      "safeSummary": "Internal AI chatbot with local LLM inference for privacy-conscious automation and natural language processing.",
+      "tags": ["AI/ML", "Backend", "Automation"],
+      "techStack": ["FastAPI", "Python", "Ollama", "Docker Compose", "JavaScript"],
+      "visibility": "internal",
+      "redactDetails": true,
+      "orgName": "Vodafone Oman",
+      "orgLogo": "/images/vodafone.png"
+    },
+    {
+      "title": "n8n Production Automations",
+      "description": "Built and operated production n8n automations for telecom operations, turning manual support tasks into reliable, audited workflows. Designed webhook based orchestration that integrates internal APIs and external services, enforces validation and access controls.",
+      "safeSummary": "Production-grade workflow automations for TechOps integrating APIs, notifications, and audit-ready outcomes.",
+      "tags": ["Automation", "Integration", "DevOps"],
+      "techStack": ["n8n", "Webhooks", "REST APIs", "Slack"],
+      "visibility": "internal",
+      "redactDetails": true,
+      "orgName": "Vodafone Oman",
+      "orgLogo": "/images/vodafone.png"
+    },
+    {
+      "title": "WebKanZ",
+      "description": "Travel experience platform for discovering and booking unique travel experiences. Built with modern web technologies focusing on user experience and seamless booking flows.",
+      "tags": ["Full Stack", "Startup", "Travel"],
+      "techStack": ["React", "Node.js", "MongoDB", "Stripe"],
+      "visibility": "private",
+      "links": {
+        "website": "https://webkanz.com"
+      }
+    },
+    {
+      "title": "Kawkaban Farm",
+      "description": "Farm-stay booking platform with WhatsApp and Instagram integration. Successfully processed 50+ bookings with automated notifications and booking management.",
+      "tags": ["Full Stack", "Startup", "Hospitality"],
+      "techStack": ["Next.js", "Supabase", "WhatsApp Business API"],
+      "visibility": "private",
+      "links": {}
+    },
+    {
+      "title": "DoduHash",
+      "description": "SaaS billing automation platform with PDF invoicing capabilities. Streamlines invoice generation and payment tracking for small businesses.",
+      "tags": ["SaaS", "Full Stack", "Fintech"],
+      "techStack": ["Remix", "PostgreSQL", "PDF Generation", "Stripe"],
+      "visibility": "private",
+      "links": {}
+    },
+    {
+      "title": "Cinemix Movie Streaming",
+      "description": "Full-stack movie streaming application with user authentication, movie browsing, and video playback. University capstone project graded A+.",
+      "tags": ["Full Stack", "University", "Media"],
+      "techStack": ["React", "Node.js", "MongoDB", "TMDB API"],
+      "visibility": "public",
+      "links": {
+        "github": "https://github.com/marshudi/cinemix"
+      }
+    },
+    {
+      "title": "WikiGulf",
+      "description": "Information portal for the Gulf region. My first major web project that taught me the value of building something people actually use.",
+      "tags": ["Frontend", "University", "Content"],
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "visibility": "public",
+      "links": {
+        "github": "https://github.com/marshudi/wikigulf",
+        "demo": "https://marshudi.github.io/wikigulf/"
+      }
+    },
+    {
+      "title": "Event Hub",
+      "description": "Event management application for university students. Successfully supported 500+ student users for event discovery and registration.",
+      "tags": ["Full Stack", "University", "Events"],
+      "techStack": ["PHP", "MySQL", "Bootstrap", "jQuery"],
+      "visibility": "public",
+      "links": {
+        "github": "https://github.com/marshudi/EventHub",
+        "demo": "https://marshudi.github.io/EventHub/"
+      }
+    },
+    {
+      "title": "World University Rankings Analysis",
+      "description": "Data science project analyzing 2000+ universities worldwide. Implemented predictive modeling and data visualization for ranking insights.",
+      "tags": ["Data Science", "University", "Analytics"],
+      "techStack": ["Python", "Pandas", "Matplotlib", "Scikit-learn"],
+      "visibility": "public",
+      "links": {
+        "github": "https://github.com/marshudi/world-university-rankings"
+      }
+    }
+  ]
+}

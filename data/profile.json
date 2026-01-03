@@ -1,0 +1,46 @@
+{
+  "name": "Mohammed Al-Marshudi",
+  "title": "Application Engineer, Operations",
+  "titles": [
+    "Application Engineer",
+    "Data Automation Engineer",
+    "Software Engineer",
+    "Data Scientist",
+    "Game Developer",
+    "Video Editor"
+  ],
+  "location": "Muscat, Oman",
+  "email": "momarshudi@outlook.com",
+  "shortBio": "Application Engineer in Operations at Vodafone Oman, building and operating internal platforms across backend APIs, web and mobile frontends, and production ETL pipelines.",
+  "longBio": "I'm Mohammed Amour Al-Marshudi, a software engineer from Oman who believes technology should solve real problems, not just exist for its own sake. I graduated from the University of Technology and Applied Sciences in January 2025 with a degree in Software Engineering. My journey with technology started long before that. I've always been the person who asks 'how does this work?' and then spends hours figuring it out.\n\nI'm drawn to the intersection of automation and impact. At Vodafone Oman, I started as an IT & Data Automation intern where I discovered the satisfaction of turning hours of manual work into something that runs in seconds. Now as an Application Engineer, I architect backend services that power enterprise applications. The problems are bigger, the stakes are higher, and I love every challenge that comes with it.\n\nI'm an entrepreneur at heart. I've co-founded ventures like WebKanZ (a travel experience platform), Kawkaban Farm (a farm-stay booking system), and DoduHash (a billing automation SaaS). These projects taught me that shipping something imperfect is infinitely better than planning something perfect that never sees the light of day.",
+  "avatar": "/images/me.png",
+  "logo": "/images/favicon.ico",
+  "resume": "/resume.pdf",
+  "social": {
+    "github": "https://github.com/marshudi",
+    "linkedin": "https://linkedin.com/in/marshudi",
+    "twitter": "https://twitter.com/eMarshudi",
+    "instagram": "https://instagram.com/emarshudi",
+    "youtube": "https://youtube.com/@MarshudiTech",
+    "email": "momarshudi@outlook.com"
+  },
+  "keywords": [
+    "Application Engineer",
+    "Full Stack Developer",
+    "Backend Engineer",
+    "Data Automation",
+    "FastAPI",
+    "Python",
+    "React",
+    "TypeScript",
+    "Vodafone",
+    "Oman",
+    "Software Engineer"
+  ],
+  "highlights": [
+    "Strong focus on reliability, automation, observability, and scalable architecture",
+    "Experience building and operating internal telecom platforms",
+    "Background in data automation and ETL pipelines",
+    "Entrepreneur with multiple ventures"
+  ]
+}

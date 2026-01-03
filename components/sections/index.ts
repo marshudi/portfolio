@@ -1,0 +1,8 @@
+export { SectionHeading } from './section-heading'
+export { Hero } from './hero'
+export { About } from './about'
+export { Experience } from './experience'
+export { Projects } from './projects'
+export { Skills } from './skills'
+export { Certifications } from './certifications'
+export { Contact } from './contact'

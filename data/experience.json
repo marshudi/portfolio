@@ -1,0 +1,46 @@
+{
+  "companies": [
+    {
+      "companyName": "Vodafone Oman",
+      "companyLogo": "/images/vodafone.png",
+      "location": "Muscat, Oman",
+      "roles": [
+        {
+          "title": "Application Engineer, Operations",
+          "team": "Operations",
+          "startDate": "2025-08",
+          "endDate": null,
+          "employmentType": "Full-time",
+          "description": [
+            "Architect and maintain internal APIs and microservices powering telecom operations and business workflows",
+            "Build real-time dashboards and web tools that provide operational visibility across teams",
+            "Design ETL pipelines handling automated data ingestion, transformation, and scheduled reporting",
+            "Implement secure authentication, role-based access control, and comprehensive audit logging",
+            "Deploy and manage containerized services on Kubernetes and OpenShift platforms",
+            "Integrate third-party systems including messaging APIs, ticketing platforms, and telecom gateways"
+          ],
+          "achievements": [
+            {
+              "title": "Promoted to Full-time",
+              "type": "promotion"
+            }
+          ]
+        },
+        {
+          "title": "Data Automation Engineer",
+          "team": "IT",
+          "startDate": "2025-02",
+          "endDate": "2025-07",
+          "employmentType": "Internship",
+          "description": [
+            "Developed automated data pipelines reducing manual reporting effort by significant margins",
+            "Built Python-based ETL workflows for data cleaning, validation, and transformation",
+            "Created Jira API integrations for streamlined project tracking and sprint analytics",
+            "Designed interactive dashboards enabling data-driven operational decisions"
+          ],
+          "achievements": []
+        }
+      ]
+    }
+  ]
+}

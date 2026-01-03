@@ -1,0 +1,65 @@
+{
+  "categories": [
+    {
+      "name": "Backend",
+      "skills": [
+        { "name": "FastAPI", "level": "expert", "years": 2 },
+        { "name": "Flask", "level": "expert", "years": 2 },
+        { "name": "Express/Node.js", "level": "advanced", "years": 3 },
+        { "name": "Actix Web (Rust)", "level": "intermediate", "years": 1 }
+      ]
+    },
+    {
+      "name": "Frontend",
+      "skills": [
+        { "name": "React", "level": "advanced", "years": 3 },
+        { "name": "TypeScript", "level": "advanced", "years": 2 },
+        { "name": "React Router", "level": "advanced", "years": 2 },
+        { "name": "Zustand", "level": "intermediate", "years": 1 },
+        { "name": "React Query", "level": "intermediate", "years": 1 },
+        { "name": "Flutter", "level": "intermediate", "years": 1 },
+        { "name": "TailwindCSS", "level": "advanced", "years": 2 }
+      ]
+    },
+    {
+      "name": "Languages",
+      "skills": [
+        { "name": "Python", "level": "expert", "years": 4 },
+        { "name": "JavaScript", "level": "advanced", "years": 3 },
+        { "name": "TypeScript", "level": "advanced", "years": 2 },
+        { "name": "Rust", "level": "intermediate", "years": 1 },
+        { "name": "SQL", "level": "advanced", "years": 3 }
+      ]
+    },
+    {
+      "name": "Data & ETL",
+      "skills": [
+        { "name": "Apache Airflow", "level": "advanced", "years": 1 },
+        { "name": "Pandas", "level": "advanced", "years": 2 },
+        { "name": "PostgreSQL", "level": "advanced", "years": 2 },
+        { "name": "MongoDB", "level": "advanced", "years": 3 },
+        { "name": "Redis", "level": "intermediate", "years": 1 }
+      ]
+    },
+    {
+      "name": "DevOps & Infrastructure",
+      "skills": [
+        { "name": "Docker", "level": "advanced", "years": 2 },
+        { "name": "Kubernetes/OpenShift", "level": "intermediate", "years": 1 },
+        { "name": "CI/CD", "level": "advanced", "years": 2 },
+        { "name": "Nginx", "level": "intermediate", "years": 2 },
+        { "name": "n8n", "level": "advanced", "years": 1 }
+      ]
+    },
+    {
+      "name": "Integrations",
+      "skills": [
+        { "name": "Slack API", "level": "advanced", "years": 1 },
+        { "name": "WhatsApp Business API", "level": "intermediate", "years": 1 },
+        { "name": "Jira API", "level": "expert", "years": 1 },
+        { "name": "SFTP/SMTP", "level": "advanced", "years": 1 },
+        { "name": "Ollama LLM", "level": "intermediate", "years": 1 }
+      ]
+    }
+  ]
+}
