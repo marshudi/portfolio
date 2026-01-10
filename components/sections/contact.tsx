@@ -2,46 +2,23 @@
 
 import * as React from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
-import { useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
 import {
   Mail,
   Github,
   Linkedin,
   Twitter,
-  Send,
   MapPin,
   Youtube,
   Instagram,
   Copy,
   Check,
-  User,
-  MessageSquare,
   Phone,
   Share2,
-  Loader2,
-  CheckCircle2,
   ExternalLink,
 } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
 import { SectionHeading } from './section-heading'
 import profile from '@/data/profile.json'
-
-// =============================================================================
-// TYPES & SCHEMA
-// =============================================================================
-
-const contactSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
-})
-
-type ContactFormData = z.infer<typeof contactSchema>
 
 interface SocialLink {
   name: string
@@ -373,35 +350,13 @@ function SuccessMessage() {
 // =============================================================================
 
 export function Contact() {
-  const [isSubmitting, setIsSubmitting] = React.useState(false)
-  const [isSubmitted, setIsSubmitted] = React.useState(false)
   const [emailCopied, setEmailCopied] = React.useState(false)
-
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm<ContactFormData>({
-    resolver: zodResolver(contactSchema),
-  })
 
   const copyEmail = React.useCallback(() => {
     navigator.clipboard.writeText(profile.email)
     setEmailCopied(true)
     setTimeout(() => setEmailCopied(false), 2000)
   }, [])
-
-  const onSubmit = async (data: ContactFormData) => {
-    setIsSubmitting(true)
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    console.log('Form submitted:', data)
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    reset()
-    setTimeout(() => setIsSubmitted(false), 5000)
-  }
 
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(profile.location)}`
 
@@ -418,96 +373,37 @@ export function Contact() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
-          className="grid lg:grid-cols-5 gap-6 max-w-5xl mx-auto"
+          className="max-w-2xl mx-auto space-y-6"
         >
-          {/* Left Column - Contact Info & Social */}
-          <div className="lg:col-span-2 space-y-6">
-            {/* Contact Information */}
-            <PremiumCard icon={Phone} title="Contact Information">
-              <div className="space-y-1">
-                <InfoRow
-                  icon={Mail}
-                  label="Email"
-                  value={profile.email}
-                  href={`mailto:${profile.email}`}
-                  onCopy={copyEmail}
-                  copied={emailCopied}
-                />
-                <InfoRow
-                  icon={MapPin}
-                  label="Location"
-                  value={profile.location}
-                  href={mapsUrl}
-                  external
-                />
-              </div>
-            </PremiumCard>
+          {/* Contact Information */}
+          <PremiumCard icon={Phone} title="Contact Information">
+            <div className="space-y-1">
+              <InfoRow
+                icon={Mail}
+                label="Email"
+                value={profile.email}
+                href={`mailto:${profile.email}`}
+                onCopy={copyEmail}
+                copied={emailCopied}
+              />
+              <InfoRow
+                icon={MapPin}
+                label="Location"
+                value={profile.location}
+                href={mapsUrl}
+                external
+              />
+            </div>
+          </PremiumCard>
 
-            {/* Social Links */}
-            <PremiumCard icon={Share2} title="Connect With Me" delay={0.1}>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-3">
-                {socialLinks.map((link, index) => (
-                  <SocialTile key={link.name} link={link} index={index} />
-                ))}
-              </div>
-            </PremiumCard>
-          </div>
-
-          {/* Right Column - Contact Form */}
-          <div className="lg:col-span-3">
-            <PremiumCard icon={MessageSquare} title="Send a Message" delay={0.2}>
-              {isSubmitted && <SuccessMessage />}
-
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-                <InputWithIcon
-                  icon={User}
-                  placeholder="Your Name"
-                  {...register('name')}
-                  error={errors.name?.message}
-                />
-
-                <InputWithIcon
-                  icon={Mail}
-                  type="email"
-                  placeholder="Your Email"
-                  {...register('email')}
-                  error={errors.email?.message}
-                />
-
-                <TextareaWithIcon
-                  icon={MessageSquare}
-                  placeholder="Your Message..."
-                  {...register('message')}
-                  error={errors.message?.message}
-                />
-
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className={`
-                    w-full h-12 text-base font-medium
-                    bg-primary hover:bg-primary/90
-                    shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30
-                    transition-all duration-200
-                    disabled:opacity-70 disabled:cursor-not-allowed
-                    active:scale-[0.98]
-                  `}
-                >
-                  {isSubmitting ? (
-                    <>
-                      <Loader2 className="h-5 w-5 mr-2 animate-spin" />
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      <Send className="h-5 w-5 mr-2" />
-                      Send Message
-                    </>
-                  )}
-                </Button>
-              </form>
-            </PremiumCard>
-          </div>
+          {/* Social Links */}
+          <PremiumCard icon={Share2} title="Connect With Me" delay={0.1}>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+              {socialLinks.map((link, index) => (
+                <SocialTile key={link.name} link={link} index={index} />
+              ))}
+            </div>
+          </PremiumCard>
         </motion.div>
       </div>
     </section>
