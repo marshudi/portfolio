@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description: profile.shortBio,
     images: [
       {
-        url: '/og-image.png',
+        url: '/images/og.png',
         width: 1200,
         height: 630,
         alt: profile.name,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${profile.name} | ${profile.title}`,
     description: profile.shortBio,
-    images: ['/og-image.png'],
+    images: ['/images/og.png'],
     creator: '@eMarshudi',
   },
   robots: {
