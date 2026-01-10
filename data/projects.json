@@ -1,11 +1,33 @@
 {
   "projects": [
     {
-      "title": "Internal CRM and Operations Platform",
-      "description": "Built a modular FastAPI backend with multiple routers covering authentication, customer profile, segmentation, and operational tools. Implemented JWT authentication, RBAC permissions, middleware logging, and request tracking. Delivered multiple client experiences (React web and Flutter Web App) backed by the same API.",
+      "title": "Sila AI Assistant",
+      "description": "Internal enterprise AI assistant with local LLM inference using Ollama, integrated with workflows and data systems for automated responses and actions.",
+      "safeSummary": "Internal AI assistant with local LLM inference for privacy-conscious automation and natural language processing.",
+      "tags": ["AI/ML", "Backend", "Automation"],
+      "techStack": ["FastAPI", "Python", "Ollama", "RAG", "Docker", "PostgreSQL"],
+      "visibility": "internal",
+      "redactDetails": true,
+      "orgName": "Vodafone Oman",
+      "orgLogo": "/images/vodafone.png"
+    },
+    {
+      "title": "WeCare Platform",
+      "description": "Modernized frontend and backend platform for operations with a modular FastAPI backend, React web client, and Flutter mobile app, all backed by a unified API.",
       "safeSummary": "A multi-client internal platform for telecom CRM and operations with secure authentication, role-based access, and unified API architecture.",
       "tags": ["Backend", "Full Stack", "Enterprise"],
       "techStack": ["FastAPI", "Python", "PostgreSQL", "Docker", "Kubernetes", "React", "TypeScript", "Flutter", "TailwindCSS"],
+      "visibility": "internal",
+      "redactDetails": true,
+      "orgName": "Vodafone Oman",
+      "orgLogo": "/images/vodafone.png"
+    },
+    {
+      "title": "Roaming Dashboard",
+      "description": "Interactive dashboard with real-time data models for roaming partner management, featuring automated data ingestion and visualization.",
+      "safeSummary": "Interactive dashboard and data model for roaming partner management with automated reporting.",
+      "tags": ["Data Engineering", "Full Stack", "Analytics"],
+      "techStack": ["React", "FastAPI", "PostgreSQL", "Apache Airflow", "TailwindCSS"],
       "visibility": "internal",
       "redactDetails": true,
       "orgName": "Vodafone Oman",
@@ -17,17 +39,6 @@
       "safeSummary": "Production ETL pipelines handling large-scale daily data processing with automated ingestion, transformation, and delivery.",
       "tags": ["Data Engineering", "ETL", "Automation"],
       "techStack": ["Apache Airflow", "Python", "Pandas", "PostgreSQL", "Slack API", "OpenShift"],
-      "visibility": "internal",
-      "redactDetails": true,
-      "orgName": "Vodafone Oman",
-      "orgLogo": "/images/vodafone.png"
-    },
-    {
-      "title": "AI Chatbot Platform",
-      "description": "Integrated local LLM inference with Ollama for privacy conscious deployments. Built session management for multi turn conversations and structured data extraction from natural language. Implemented modular orchestration and validation layers to support future expansion.",
-      "safeSummary": "Internal AI chatbot with local LLM inference for privacy-conscious automation and natural language processing.",
-      "tags": ["AI/ML", "Backend", "Automation"],
-      "techStack": ["FastAPI", "Python", "Ollama", "Docker Compose", "JavaScript"],
       "visibility": "internal",
       "redactDetails": true,
       "orgName": "Vodafone Oman",
@@ -68,7 +79,9 @@
       "tags": ["SaaS", "Full Stack", "Fintech"],
       "techStack": ["Remix", "PostgreSQL", "PDF Generation", "Stripe"],
       "visibility": "private",
-      "links": {}
+      "links": {
+        "website": "https://doduhash.com"
+      }
     },
     {
       "title": "Cinemix Movie Streaming",

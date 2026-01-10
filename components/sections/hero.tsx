@@ -1,150 +1,102 @@
 'use client'
 
 import * as React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowDown, Mail, Github, Linkedin } from 'lucide-react'
+import { ArrowDown, ArrowRight, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import profile from '@/data/profile.json'
 
-// Tweak this to adjust the crop position (X% Y%)
-// "50% 15%" = horizontally centered, showing upper portion (head + shoulders)
-const AVATAR_POSITION = '50% 15%'
-
 export function Hero() {
-  const [titleIndex, setTitleIndex] = React.useState(0)
-
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      setTitleIndex((prev) => (prev + 1) % profile.titles.length)
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [])
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-glow" />
-      <div className="absolute inset-0 bg-grid opacity-30" />
+      <div className="absolute inset-0 bg-grid opacity-20" />
       <div className="absolute inset-0 bg-stars" />
+
+      {/* Animated gradient orbs */}
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
 
       {/* Content */}
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="flex flex-col items-center text-center space-y-8">
-          {/* Avatar */}
+        <div className="flex flex-col items-center text-center space-y-6">
+          {/* Status Badge */}
           <motion.div
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
           >
-            {/*
-              Responsive sizes:
-              - Mobile: 96px (w-24 h-24)
-              - Tablet (md): 112px (w-28 h-28)
-              - Desktop (lg): 128px (w-32 h-32)
-            */}
-            <div
-              className="
-                relative overflow-hidden rounded-full
-                w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32
-                ring-4 ring-primary/20
-                shadow-lg shadow-primary/10
-                glow-blue
-              "
-            >
-              <Image
-                src={profile.avatar}
-                alt={profile.name}
-                fill
-                sizes="(max-width: 768px) 96px, (max-width: 1024px) 112px, 128px"
-                className="object-cover"
-                style={{ objectPosition: AVATAR_POSITION }}
-                priority
-              />
-            </div>
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary font-medium">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              </span>
+              Available for opportunities
+            </span>
           </motion.div>
 
           {/* Name */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-4xl md:text-6xl font-bold"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight"
           >
-            {profile.name}
+            <span className="bg-gradient-to-r from-foreground via-foreground to-foreground/70 bg-clip-text">
+              {profile.name}
+            </span>
           </motion.h1>
 
-          {/* Animated Title */}
-          <motion.div
+          {/* Role */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="text-xl md:text-2xl text-primary font-semibold tracking-wide"
+          >
+            {profile.title}
+          </motion.p>
+
+          {/* Value Statement */}
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="h-8"
+            className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed"
           >
-            <motion.p
-              key={titleIndex}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              className="text-xl md:text-2xl text-primary font-medium"
-            >
-              {profile.titles[titleIndex]}
-            </motion.p>
-          </motion.div>
+            I build scalable platforms, automation systems, and AI-driven tools for enterprise environments.
+          </motion.p>
 
-          {/* Location */}
+          {/* Location indicator */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="text-muted-foreground"
+            className="text-sm text-muted-foreground/70 tracking-wide uppercase"
           >
             {profile.location}
-          </motion.p>
-
-          {/* Short Bio */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="text-lg text-muted-foreground max-w-2xl"
-          >
-            {profile.shortBio}
           </motion.p>
 
           {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.7 }}
-            className="flex flex-wrap justify-center gap-4"
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="flex flex-wrap justify-center gap-4 pt-4"
           >
-            <Button size="lg" asChild>
-              <Link href="#contact">
-                <Mail className="mr-2 h-5 w-5" />
-                Contact Me
+            <Button size="lg" className="h-12 px-8 text-base font-medium shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all" asChild>
+              <Link href="#projects">
+                <ArrowRight className="mr-2 h-5 w-5" />
+                View Projects
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a
-                href={profile.social.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="mr-2 h-5 w-5" />
-                GitHub
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a
-                href={profile.social.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin className="mr-2 h-5 w-5" />
-                LinkedIn
-              </a>
+            <Button size="lg" variant="outline" className="h-12 px-8 text-base font-medium border-border/50 hover:bg-primary/5 hover:border-primary/30 transition-all" asChild>
+              <Link href="#contact">
+                <Mail className="mr-2 h-5 w-5" />
+                Contact
+              </Link>
             </Button>
           </motion.div>
 
@@ -156,15 +108,15 @@ export function Hero() {
             className="absolute bottom-8"
           >
             <Link
-              href="#about"
-              className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors"
+              href="#experience"
+              className="flex flex-col items-center text-muted-foreground/50 hover:text-primary transition-colors"
             >
-              <span className="text-sm mb-2">Scroll Down</span>
+              <span className="text-xs mb-2 uppercase tracking-widest">Explore</span>
               <motion.div
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
+                animate={{ y: [0, 6, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
               >
-                <ArrowDown className="h-5 w-5" />
+                <ArrowDown className="h-4 w-4" />
               </motion.div>
             </Link>
           </motion.div>
