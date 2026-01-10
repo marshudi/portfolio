@@ -9,6 +9,15 @@ import { Button } from '@/components/ui/button'
 import profile from '@/data/profile.json'
 
 export function Hero() {
+  const [titleIndex, setTitleIndex] = React.useState(0)
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setTitleIndex((prev) => (prev + 1) % profile.titles.length)
+    }, 2500)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Effects */}
@@ -77,6 +86,25 @@ export function Hero() {
           >
             {profile.title}
           </motion.p>
+
+          {/* Animated Titles */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.45 }}
+            className="h-7 overflow-hidden"
+          >
+            <motion.p
+              key={titleIndex}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className="text-base md:text-lg text-muted-foreground font-medium"
+            >
+              {profile.titles[titleIndex]}
+            </motion.p>
+          </motion.div>
 
           {/* Value Statement */}
           <motion.p
