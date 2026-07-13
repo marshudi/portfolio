@@ -14,6 +14,13 @@ import {
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from '@/components/ui/dialog'
 import { SectionHeading } from './section-heading'
 import { cn } from '@/lib/utils'
 import projectsData from '@/data/projects.json'
@@ -167,6 +174,8 @@ function ProjectCard({
 }: {
   project: (typeof projectsData.projects)[0]
 }) {
+  const [showAllTech, setShowAllTech] = React.useState(false)
+
   const displayDescription =
     project.redactDetails && project.safeSummary
       ? project.safeSummary
@@ -275,11 +284,45 @@ function ProjectCard({
           </Chip>
         ))}
         {project.techStack.length > maxTechDisplay && (
-          <Chip variant="more">
+          <button
+            onClick={() => setShowAllTech(true)}
+            className={cn(
+              'inline-flex items-center justify-center',
+              TOKENS.chipHeight,
+              TOKENS.chipPadding,
+              TOKENS.chipRadius,
+              TOKENS.chipFont,
+              'border',
+              'bg-muted/50 text-muted-foreground border-border/50',
+              'hover:bg-primary/10 hover:text-primary hover:border-primary/30',
+              'transition-colors cursor-pointer'
+            )}
+          >
             +{project.techStack.length - maxTechDisplay} more
-          </Chip>
+          </button>
         )}
       </div>
+
+      {/* Tech Stack Dialog */}
+      <Dialog open={showAllTech} onOpenChange={setShowAllTech}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>{project.title}</DialogTitle>
+            <DialogDescription>
+              Complete technology stack
+            </DialogDescription>
+          </DialogHeader>
+          <div className="mt-4">
+            <div className={cn('flex flex-wrap', TOKENS.chipGap)}>
+              {project.techStack.map((tech, idx) => (
+                <Chip key={idx} variant="tech">
+                  {tech}
+                </Chip>
+              ))}
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
 
       {/* Spacer to push links to bottom */}
       <div className="flex-1" />
