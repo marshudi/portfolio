@@ -177,8 +177,7 @@ export default async function ExtensionPage({ params }: { params: Promise<{ slug
                   <h3 className="text-xl font-semibold text-foreground mb-3">Developer</h3>
                   <p className="leading-relaxed">
                     Built by <a href="https://marshudi.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Marshudi</a>,
-                    an independent developer based in Oman. This extension is born from real-world operational needs at scale,
-                    refined through production use in enterprise telecom environments.
+                    an independent developer based in Oman. This extension is designed to solve real-world backup challenges for teams managing Atlassian Cloud workspaces.
                   </p>
                   <p className="leading-relaxed mt-3">
                     GitHub: <a href="https://github.com/marshudi" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">github.com/marshudi</a>
