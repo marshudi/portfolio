@@ -6,20 +6,26 @@
       "location": "Muscat, Oman",
       "roles": [
         {
-          "title": "Application Engineer, Operations",
+          "title": "Application Engineer",
           "team": "Operations",
           "startDate": "2025-08",
           "endDate": null,
           "employmentType": "Full-time",
           "description": [
-            "Architect and maintain internal APIs and microservices powering telecom operations and business workflows",
-            "Build real-time dashboards and web tools that provide operational visibility across teams",
-            "Design ETL pipelines handling automated data ingestion, transformation, and scheduled reporting",
-            "Implement secure authentication, role-based access control, and comprehensive audit logging",
-            "Deploy and manage containerized services on Kubernetes and OpenShift platforms",
-            "Integrate third-party systems including messaging APIs, ticketing platforms, and telecom gateways"
+            "Built full-stack internal platform (React 19, FastAPI, PostgreSQL 16) serving 4 business teams",
+            "Delivered 5+ releases: billing reports, SME porting, provisioning reconciliation, and RBAC",
+            "Replaced n8n webhooks with direct API integration, cutting response time and removing failure points",
+            "Designed RBAC system replacing 30 boolean columns with zero schema changes required",
+            "Fixed Apache Doris OOM errors on 5M+ record queries, eliminating production 500s",
+            "Automated recovery of 386 failed payments at 99.5% success rate",
+            "Deployed across 3 Kubernetes/Podman clusters with CI/CD"
           ],
           "achievements": [
+            {
+              "title": "Game Changer Award 2026 Q1",
+              "type": "award",
+              "description": "Recognized for outstanding contributions in building innovative internal tools, automation systems, and scalable solutions that drove significant business impact"
+            },
             {
               "title": "Promoted to Full-time",
               "type": "promotion"
@@ -27,16 +33,17 @@
           ]
         },
         {
-          "title": "Data Automation Engineer",
+          "title": "Intern - IT & Data Automation Engineer",
           "team": "IT",
           "startDate": "2025-02",
-          "endDate": "2025-07",
+          "endDate": "2025-08",
           "employmentType": "Internship",
           "description": [
-            "Developed automated data pipelines reducing manual reporting effort by significant margins",
-            "Built Python-based ETL workflows for data cleaning, validation, and transformation",
-            "Created Jira API integrations for streamlined project tracking and sprint analytics",
-            "Designed interactive dashboards enabling data-driven operational decisions"
+            "Built Slack/Jira bots reducing manual operations by approximately 40%",
+            "Migrated frontend to React.js and introduced Python analytics across 2 departments",
+            "Coordinated across Finance, IT, and Cybersecurity teams",
+            "Developed automated data pipelines reducing manual reporting effort",
+            "Built Python-based ETL workflows for data cleaning, validation, and transformation"
           ],
           "achievements": []
         }

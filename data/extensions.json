@@ -1,0 +1,18 @@
+{
+  "extensions": [
+    {
+      "slug": "atlassian-backup",
+      "name": "Atlassian Backup",
+      "tagline": "Backup Confluence pages and Jira tickets as PDF with attachments",
+      "description": "Professional-grade backup solution for Atlassian Cloud that exports your Confluence pages and Jira tickets as clean PDFs with full attachments. Save directly to your Downloads folder or sync to SharePoint-all using your existing browser session with zero API token setup.",
+      "icon": "/images/extensions/atlassian-backup-icon.png",
+      "version": "1.0.0",
+      "category": "Tool",
+      "tags": ["backup", "confluence", "jira", "sharepoint", "pdf"],
+      "storeLinks": {
+        "chrome": "https://chrome.google.com/webstore/detail/atlassian-backup",
+        "edge": "https://microsoftedge.microsoft.com/addons/detail/atlassian-backup"
+      }
+    }
+  ]
+}

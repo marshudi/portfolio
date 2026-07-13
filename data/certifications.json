@@ -1,10 +1,53 @@
 {
   "certifications": [
     {
-      "name": "Software Engineering Degree",
+      "name": "Game Changer Award 2026 Q1",
+      "issuer": "Vodafone Oman",
+      "date": "2026-05",
+      "type": "award",
+      "description": "Recognized for outstanding contributions in building innovative internal tools, automation systems, and scalable solutions that drove significant business impact"
+    },
+    {
+      "name": "B.Sc. Software Engineering (GPA 3.5)",
       "issuer": "University of Technology and Applied Sciences",
       "date": "2025-01",
       "type": "degree"
+    },
+    {
+      "name": "Certificate of Appreciation 2024",
+      "issuer": "University of Technology and Applied Sciences",
+      "date": "2024",
+      "type": "certificate"
+    },
+    {
+      "name": "Certificate of Achievement 2024",
+      "issuer": "University of Technology and Applied Sciences",
+      "date": "2024",
+      "type": "certificate"
+    },
+    {
+      "name": "Digital Freelancer",
+      "issuer": "UDACITY",
+      "date": "2023",
+      "type": "certificate"
+    },
+    {
+      "name": "Front End Web Developer",
+      "issuer": "UDACITY",
+      "date": "2023",
+      "type": "certificate"
+    },
+    {
+      "name": "SNSIR5.0 2024",
+      "issuer": "University of Technology and Applied Sciences",
+      "date": "2024",
+      "type": "certificate"
+    },
+    {
+      "name": "Data Architecture Fundamentals & Data Mining / Analytics Training",
+      "issuer": "OHI Training Academy",
+      "date": "2024",
+      "type": "certificate"
     }
   ]
 }

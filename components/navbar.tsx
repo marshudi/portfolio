@@ -3,6 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { Menu, X, Sun, Moon, Download } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -11,14 +12,17 @@ import { useTheme } from '@/components/theme-provider'
 import profile from '@/data/profile.json'
 
 const navItems = [
-  { name: 'About', href: '#about' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'About', href: '/#about' },
+  { name: 'Experience', href: '/#experience' },
+  { name: 'Projects', href: '/#projects' },
+  { name: 'Skills', href: '/#skills' },
+  { name: 'Extensions', href: '/extensions' },
+  { name: 'Contact', href: '/#contact' },
 ]
 
 export function Navbar() {
+  const pathname = usePathname()
+  const isExtensionsPage = pathname?.startsWith('/extensions')
   const [isScrolled, setIsScrolled] = React.useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const [activeSection, setActiveSection] = React.useState('')
@@ -102,20 +106,22 @@ export function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-1">
-          {navItems.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className={cn(
-                'px-4 py-2 text-sm font-medium rounded-md transition-colors',
-                activeSection === item.href.slice(1)
-                  ? 'text-primary bg-primary/10'
-                  : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-              )}
-            >
-              {item.name}
-            </a>
-          ))}
+          {navItems
+            .filter((item) => isExtensionsPage ? item.href === '/extensions' : true)
+            .map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className={cn(
+                  'px-4 py-2 text-sm font-medium rounded-md transition-colors',
+                  activeSection === item.href.slice(1)
+                    ? 'text-primary bg-primary/10'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                )}
+              >
+                {item.name}
+              </a>
+            ))}
         </div>
 
         {/* Actions */}
@@ -171,21 +177,23 @@ export function Navbar() {
           className="md:hidden bg-background border-b border-border"
         >
           <div className="container mx-auto px-4 py-4 space-y-2">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={cn(
-                  'block px-4 py-2 text-sm font-medium rounded-md transition-colors',
-                  activeSection === item.href.slice(1)
-                    ? 'text-primary bg-primary/10'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                )}
-              >
-                {item.name}
-              </a>
-            ))}
+            {navItems
+              .filter((item) => isExtensionsPage ? item.href === '/extensions' : true)
+              .map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={cn(
+                    'block px-4 py-2 text-sm font-medium rounded-md transition-colors',
+                    activeSection === item.href.slice(1)
+                      ? 'text-primary bg-primary/10'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  )}
+                >
+                  {item.name}
+                </a>
+              ))}
             <Button variant="outline" size="sm" className="w-full mt-4" asChild>
               <a href={profile.resume} download>
                 <Download className="h-4 w-4 mr-2" />

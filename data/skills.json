@@ -3,22 +3,21 @@
     {
       "name": "Backend",
       "skills": [
-        { "name": "FastAPI", "level": "expert", "years": 2 },
-        { "name": "Flask", "level": "expert", "years": 2 },
-        { "name": "Express/Node.js", "level": "advanced", "years": 3 },
-        { "name": "Actix Web (Rust)", "level": "intermediate", "years": 1 }
+        { "name": "Python (FastAPI)", "level": "expert", "years": 2 },
+        { "name": "Node.js", "level": "advanced", "years": 3 },
+        { "name": "REST APIs", "level": "expert", "years": 2 },
+        { "name": "SQLAlchemy", "level": "advanced", "years": 2 }
       ]
     },
     {
       "name": "Frontend",
       "skills": [
-        { "name": "React", "level": "advanced", "years": 3 },
+        { "name": "React.js", "level": "advanced", "years": 3 },
         { "name": "TypeScript", "level": "advanced", "years": 2 },
-        { "name": "React Router", "level": "advanced", "years": 2 },
-        { "name": "Zustand", "level": "intermediate", "years": 1 },
-        { "name": "React Query", "level": "intermediate", "years": 1 },
-        { "name": "Flutter", "level": "intermediate", "years": 1 },
-        { "name": "TailwindCSS", "level": "advanced", "years": 2 }
+        { "name": "JavaScript (ES6+)", "level": "advanced", "years": 3 },
+        { "name": "TailwindCSS", "level": "advanced", "years": 2 },
+        { "name": "Vite", "level": "advanced", "years": 2 },
+        { "name": "HTML/CSS", "level": "expert", "years": 4 }
       ]
     },
     {
@@ -32,33 +31,36 @@
       ]
     },
     {
-      "name": "Data & ETL",
+      "name": "Databases",
       "skills": [
-        { "name": "Apache Airflow", "level": "advanced", "years": 1 },
-        { "name": "Pandas", "level": "advanced", "years": 2 },
-        { "name": "PostgreSQL", "level": "advanced", "years": 2 },
+        { "name": "PostgreSQL", "level": "expert", "years": 2 },
+        { "name": "MySQL/MariaDB", "level": "advanced", "years": 2 },
         { "name": "MongoDB", "level": "advanced", "years": 3 },
-        { "name": "Redis", "level": "intermediate", "years": 1 }
+        { "name": "Firebase", "level": "intermediate", "years": 1 },
+        { "name": "Apache Doris", "level": "advanced", "years": 1 }
       ]
     },
     {
-      "name": "DevOps & Infrastructure",
+      "name": "DevOps",
       "skills": [
-        { "name": "Docker", "level": "advanced", "years": 2 },
-        { "name": "Kubernetes/OpenShift", "level": "intermediate", "years": 1 },
+        { "name": "Docker", "level": "expert", "years": 2 },
+        { "name": "Kubernetes", "level": "advanced", "years": 1 },
         { "name": "CI/CD", "level": "advanced", "years": 2 },
-        { "name": "Nginx", "level": "intermediate", "years": 2 },
-        { "name": "n8n", "level": "advanced", "years": 1 }
+        { "name": "Nginx", "level": "advanced", "years": 2 },
+        { "name": "Linux", "level": "advanced", "years": 3 }
       ]
     },
     {
-      "name": "Integrations",
+      "name": "Tools & Other",
       "skills": [
-        { "name": "Slack API", "level": "advanced", "years": 1 },
-        { "name": "WhatsApp Business API", "level": "intermediate", "years": 1 },
-        { "name": "Jira API", "level": "expert", "years": 1 },
-        { "name": "SFTP/SMTP", "level": "advanced", "years": 1 },
-        { "name": "Ollama LLM", "level": "intermediate", "years": 1 }
+        { "name": "Git", "level": "expert", "years": 4 },
+        { "name": "Jira", "level": "expert", "years": 2 },
+        { "name": "Postman", "level": "advanced", "years": 2 },
+        { "name": "Playwright", "level": "advanced", "years": 1 },
+        { "name": "RBAC design", "level": "expert", "years": 1 },
+        { "name": "API integration", "level": "expert", "years": 2 },
+        { "name": "Data pipelines", "level": "advanced", "years": 1 },
+        { "name": "Microservices", "level": "advanced", "years": 1 }
       ]
     }
   ]
