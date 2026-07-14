@@ -10,8 +10,7 @@
       "category": "Tool",
       "tags": ["backup", "confluence", "jira", "sharepoint", "pdf"],
       "storeLinks": {
-        "chrome": "https://chrome.google.com/webstore/detail/atlassian-backup",
-        "edge": "https://microsoftedge.microsoft.com/addons/detail/atlassian-backup"
+        "chrome": "https://chromewebstore.google.com/detail/gajcgmhilgcijmopmnohgaiceehmehhi"
       }
     }
   ]

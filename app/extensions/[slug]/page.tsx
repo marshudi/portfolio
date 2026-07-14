@@ -79,14 +79,6 @@ export default async function ExtensionPage({ params }: { params: Promise<{ slug
                     </a>
                   </Button>
                 )}
-                {extension.storeLinks?.edge && (
-                  <Button variant="outline" asChild>
-                    <a href={extension.storeLinks.edge} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Add to Edge
-                    </a>
-                  </Button>
-                )}
               </div>
             </div>
           </div>
